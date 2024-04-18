@@ -30,4 +30,60 @@ h1 {
     width: 100%;
     max-width: 1200px; 
     min-height: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.entries {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.entries div {
+    display: flex;
+    align-items: center;
+}
+
+.entries span {
+    font-size: 50px;
+}
+
+.entries input {
+    height: 70px;
+    border-radius: 20px;
+    border: 3px black solid;
+    background: #F4F4F4;
+    margin: 10px;
+    font-size: 40px;
+    padding-left: 10px;
+}
+
+.name-entry input {
+    width: 900px;
+}
+
+.date-entry input {
+    width: 400px;
+}
+
+.amount-entry input {
+    width: 270px;
+}
+
+button {
+    width: 300px;
+    height: 70px;
+    background: #5FC72E;
+    color: #ffffff;
+    border: #1D5F2B 5px solid;
+    border-radius: 20px;
+    font-size: 40px;
+    margin: 10px;
+}
+
+button:hover {
+    background: #6FD83F;
+    border-color: #2E6F3C;
 }
