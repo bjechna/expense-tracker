@@ -81,9 +81,44 @@ button {
     border-radius: 20px;
     font-size: 40px;
     margin: 10px;
+    transition: 300ms;
 }
 
 button:hover {
     background: #6FD83F;
     border-color: #2E6F3C;
+}
+
+table {
+    border-collapse: collapse;
+    width: 1200px;
+    font-size: 40px;
+    text-align: center;
+    margin: 25px 0;
+    background-color: #ffffff;
+}
+
+.name-column {
+    width: 450px;
+}
+
+.date-column {
+    width: 300px;
+}
+
+.amount-column {
+    width: 350px;
+}
+
+.delete-column {
+    width: 100px;
+}
+
+table td, table th {
+    border: 2px black solid;
+    height: 100px;
+}
+
+table tr td:last-child {
+    background-color: #FF0000;
 }
