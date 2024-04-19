@@ -125,7 +125,7 @@ table td, table th {
     height: 100px;
 }
 
-table tr td:last-child {
+.delete {
     background-color: #FF0000;
     cursor: pointer;
 }

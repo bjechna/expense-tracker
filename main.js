@@ -28,9 +28,26 @@ function addExpense() {
 
         const del = document.createElement("td");
         del.innerHTML = "X";
+        del.className = "delete";
         tr.appendChild(del);
-        del.addEventListener("click", function() {
-            del.parentElement.remove();
-        });
+
+        saveData();
     }
 }
+
+tb.addEventListener("click", function(e){
+    if (e.target.className == "delete") {
+        e.target.parentElement.remove();
+        saveData();
+    }
+});
+
+function saveData() {
+    localStorage.setItem("expenses", tb.innerHTML);
+}
+
+function loadData() {
+    tb.innerHTML = localStorage.getItem("expenses"); 
+}
+
+loadData();
