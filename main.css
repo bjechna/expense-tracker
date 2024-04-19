@@ -72,6 +72,11 @@ h1 {
     width: 270px;
 }
 
+.amount-entry input::-webkit-outer-spin-button,
+.amount-entry input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 button {
     width: 300px;
     height: 70px;
@@ -82,6 +87,7 @@ button {
     font-size: 40px;
     margin: 10px;
     transition: 300ms;
+    cursor: pointer;
 }
 
 button:hover {
@@ -121,4 +127,5 @@ table td, table th {
 
 table tr td:last-child {
     background-color: #FF0000;
+    cursor: pointer;
 }
